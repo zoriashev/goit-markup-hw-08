@@ -1,0 +1,114 @@
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  &:nth-child(4) {
+    margin-bottom: 20px;
+  }
+}
+.form__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: $secondary-color;
+}
+.policy__link {
+  text-decoration-line: underline;
+  margin-left: 4px;
+  color: $accent-color;
+}
+.form__field input::placeholder {
+  line-height: calc(16 / 14);
+  letter-spacing: 0.01em;
+
+  color: $placeholder-color;
+}
+.form__input {
+  padding: 11px 42px;
+  border: 1px solid $form-border-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include transition(border-color);
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.form__textarea {
+  @include transition(border-color);
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.form__input:focus ~ .form__icon {
+  fill: $accent-color;
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(25%);
+  height: 18px;
+  width: 18px;
+  fill: $primary-color;
+  @include transition(fill);
+}
+.form__textarea {
+  padding: 12px 16px;
+  border: 1px solid $form-border-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  height: 120px;
+}
+.policy {
+  @include displayflex;
+  margin-bottom: 30px;
+}
+.policy__label {
+  display: inline-flex;
+  align-items: center;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+}
+.policy__checkbox--icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: $white-color;
+  border: 2px solid $primary-color;
+  border-radius: 3px;
+  margin-right: 7px;
+
+  .policy__checkbox:focus + & {
+    border-color: $accent-color;
+  }
+  .policy__checkbox:checked + & {
+    background-image: url(../images/checkbox.svg);
+    fill: $white-color;
+    background-color: $accent-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    border-color: $accent-color;
+  }
+}
+
+.button--submit {
+  display: block;
+  margin: 0 auto;
+}
+.form__input--sub {
+  padding: 11px 12px;
+  width: 360px;
+  height: 50px;
+  border: 1px solid $sub-border-color;
+  border-radius: 4px;
+  background-color: transparent;
+  color: $white-color;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.01em;
+}

@@ -1,0 +1,27 @@
+.features {
+  display: flex;
+}
+.features__heading {
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.features__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.features__description {
+  line-height: 24px;
+  color: $secondary-color;
+  text-align: left;
+}
+.features__icon {
+  @include displayflex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}

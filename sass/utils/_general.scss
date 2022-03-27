@@ -1,0 +1,30 @@
+body {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: $primary-color;
+  letter-spacing: 0.03em;
+}
+button {
+  cursor: pointer;
+}
+.section {
+  padding: 94px 0;
+}
+.footer {
+  padding: 60px 0;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
