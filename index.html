@@ -25,46 +25,80 @@
 
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <a class="logo logo--header" href="./index.html" lang="en"
-            >Web<span class="logo--black">Studio</span></a
+        <a class="logo logo--header" href="./index.html" lang="en"
+          >Web<span class="logo--black">Studio</span></a
+        >
+        <div data-menu class="menu--container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-contacts--mobile">
+            <ul class="header-contacts">
+              <li class="header-contacts__item">
+                <a
+                  class="header-contacts__link contacts--phone"
+                  href="tel:+380961111111"
+                >
+                  <svg class="header-contacts__icon" width="10" height="16">
+                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-contacts__item">
+                <a
+                  class="header-contacts__link contacts--email"
+                  href="mailto:info@devstudio.com"
+                  lang="en"
+                >
+                  <svg class="header-contacts__icon" width="16" height="12">
+                    <use href="./images/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="header-social">
+              <li class="header-social__list">
+                <a class="header-social__link" href="">Instagram</a>
+              </li>
+              <li class="header-social__list">
+                <a class="header-social__link" href="">Twitter</a>
+              </li>
+              <li class="header-social__list">
+                <a class="header-social__link" href="">Facebook</a>
+              </li>
+              <li class="header-social__list">
+                <a class="header-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button data-menu-button type="button" class="button--menu">
+          <svg
+            aria-label="Переключатель мобильного меню"
+            width="40"
+            height="40"
           >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a
-              class="header-contacts__link"
-              href="mailto:info@devstudio.com"
-              lang="en"
-            >
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:+380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <use class="icon--menu" href="./images/sprite.svg#menu-icon"></use>
+            <use
+              class="icon--close"
+              href="./images/sprite.svg#close-icon"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -84,7 +118,7 @@
           <ul class="features">
             <li class="features__item">
               <div class="features__icon">
-                <svg height="70px" width="70px">
+                <svg height="70" width="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -97,7 +131,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg height="70" class="benefits-icon">
+                <svg height="70" width="70" class="benefits-icon">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -111,7 +145,7 @@
 
             <li class="features__item">
               <div class="features__icon">
-                <svg height="70" class="benefits-icon">
+                <svg height="70" width="70" class="benefits-icon">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -124,7 +158,7 @@
             </li>
             <li class="features__item">
               <div class="features__icon">
-                <svg height="70" class="benefits-icon">
+                <svg height="70" width="70" class="benefits-icon">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -180,7 +214,7 @@
           <ul class="employee__list">
             <li class="employee__item">
               <img
-                width="270"
+                width="450"
                 src="./images/employees/product-designer.jpg"
                 alt="product-designer"
               />
@@ -221,7 +255,7 @@
             </li>
             <li class="employee__item">
               <img
-                width="270"
+                width="450"
                 src="./images/employees/frontend-developer.jpg"
                 alt="frontend-developer"
               />
@@ -262,7 +296,7 @@
             </li>
             <li class="employee__item">
               <img
-                width="270"
+                width="450"
                 src="./images/employees/marketing.jpg"
                 alt="marketing"
               />
@@ -303,7 +337,7 @@
             </li>
             <li class="employee__item">
               <img
-                width="270"
+                width="450"
                 src="./images/employees/ui-designer.jpg"
                 alt="ui-designer"
               />
@@ -408,7 +442,7 @@
             >Web<span class="logo--white">Studio</span></a
           >
           <address>
-            <ul class="footer__link">
+            <ul class="footer__address">
               <li class="footer__item">
                 <a
                   class="footer__link footer__link--address"
@@ -563,5 +597,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/ mobile-menu.js"></script>
   </body>
 </html>

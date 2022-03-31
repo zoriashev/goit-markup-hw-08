@@ -1,8 +1,10 @@
 .we-do {
-  padding-bottom: 94px;
+  @media screen and (min-width: "480px") {
+    display: none;
+  }
 }
 .we-do__list {
-  display: flex;
+  // display: flex;
 }
 .we-do__image {
   position: relative;

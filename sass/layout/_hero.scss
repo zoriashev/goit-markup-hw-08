@@ -1,17 +1,26 @@
 .hero__heading {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
+  max-width: 360px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $white-color;
   margin-bottom: 30px;
-  max-width: 696px;
+
   margin-left: auto;
   margin-right: auto;
 }
 .hero {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
   background-color: $hero-bg-color;
-  max-width: 1600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -23,7 +32,7 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
 }
