@@ -1,7 +1,37 @@
 .footer {
   background: $footer-bg;
   padding: 60px 0;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+.footer--container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 60px;
+    column-gap: 160px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.footer__sub {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+}
+
+.footer__contacts {
+  @media screen and (min-width: 1200px) {
+    margin-right: 60px;
+  }
+}
+.footer__social {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .footer__heading {
   font-family: Roboto;
@@ -14,7 +44,9 @@
 }
 .footer__address {
   margin-top: 20px;
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
@@ -26,7 +58,7 @@
   color: $footer-link;
   @include transition(color);
   &:hover,
-  &::focus {
+  &:focus {
     color: $accent-color;
   }
 }
@@ -41,7 +73,9 @@
   color: $white-color;
 }
 .footer__social {
-  margin-bottom: 63px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 63px;
+  }
 }
 
 .social-icons {
@@ -49,7 +83,6 @@
 }
 .form__input--sub {
   padding: 11px 12px;
-  width: 450px;
   height: 50px;
   border: 1px solid $sub-border-color;
   border-radius: 4px;
@@ -59,4 +92,9 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.01em;
   margin-bottom: 20px;
+  width: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: 360px;
+  }
 }

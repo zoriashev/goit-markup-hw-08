@@ -1,10 +1,15 @@
 .we-do {
-  @media screen and (min-width: "480px") {
+  @media screen and (max-width: "1199px") {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
   }
 }
 .we-do__list {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .we-do__image {
   position: relative;

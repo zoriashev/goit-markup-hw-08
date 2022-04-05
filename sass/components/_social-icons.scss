@@ -9,8 +9,7 @@
   @include iconsize;
   background-color: $white-color;
   fill: #afb1b8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill, background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;
@@ -22,8 +21,7 @@
   @include iconsize;
   background-color: rgba(255, 255, 255, 0.1);
   fill: $white-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-color);
   &:hover,
   &:focus {
     background-color: $accent-color;

@@ -6,7 +6,10 @@
   color: $accent-color;
 }
 .logo--header {
-  // margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
   padding: 16px 0;
 }
 .logo--white {

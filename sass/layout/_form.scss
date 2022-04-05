@@ -69,7 +69,14 @@
 .policy__label {
   display: inline-flex;
   align-items: center;
-  line-height: calc(24 / 14);
+  font-weight: 400;
+  font-size: 12px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: $secondary-color;
 }

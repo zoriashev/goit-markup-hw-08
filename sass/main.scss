@@ -8,7 +8,12 @@
 @import "components/social-icons";
 @import "components/logo";
 @import "layout/features";
-@import "layout/header";
+@import "layout/header/header_social";
+@import "layout/header/header_nav";
+@import "layout/header/header_contacts";
+
+@import "layout/header/header";
+
 @import "layout/we-do";
 @import "layout/clients";
 @import "layout/employees";
