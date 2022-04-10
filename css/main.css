@@ -656,6 +656,7 @@ button {
     left: 0;
     width: 100%;
     height: 100vh;
+    z-index: 1001;
     background-color: #ffffff;
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
@@ -1454,6 +1455,10 @@ button {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .footer {

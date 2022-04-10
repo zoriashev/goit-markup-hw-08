@@ -79,3 +79,7 @@
   color: $primary-color;
   margin-bottom: 12px;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
