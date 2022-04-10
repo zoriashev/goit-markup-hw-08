@@ -28,20 +28,32 @@
         <a class="logo logo--header" href="./index.html" lang="en"
           >Web<span class="logo--black">Studio</span></a
         >
-        <button data-menu-button type="button" class="button--menu">
+        <button data-menu-open type="button" class="button--menu">
           <svg
             aria-label="Переключатель мобильного меню"
             width="40"
             height="40"
           >
             <use class="icon--menu" href="./images/sprite.svg#menu-icon"></use>
-            <use
-              class="icon--close"
-              href="./images/sprite.svg#close-icon"
-            ></use>
           </svg>
         </button>
-        <div data-menu class="menu--container">
+        <div data-menu class="menu--container is-hidden">
+          <button
+            data-menu-close
+            type="button"
+            class="button--menu button--close"
+          >
+            <svg
+              aria-label="Переключатель мобильного меню"
+              width="40"
+              height="40"
+            >
+              <use
+                class="icon--close"
+                href="./images/sprite.svg#close-icon"
+              ></use>
+            </svg>
+          </button>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -375,7 +387,7 @@
                     ./images/employees/ui-designer.jpg    1x,
                     ./images/employees/ui-designer-2x.jpg 2x
                   "
-                  sizes="(min-width:1200px) 370px 25vw, (min-width:768px) 354px 50vw,450px 100vw"
+                  sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
                 />
 
                 <img
@@ -588,6 +600,7 @@
               name="name"
               id="name"
               autofocus
+              required
             />
             <svg class="form__icon">
               <use href="./images/sprite.svg#icon-person"></use>
@@ -596,7 +609,13 @@
 
           <div class="form__field">
             <label class="form__label" for="tel">Телефон</label>
-            <input class="form__input" type="text" name="tel" id="tel" />
+            <input
+              required
+              class="form__input"
+              type="text"
+              name="tel"
+              id="tel"
+            />
             <svg class="form__icon">
               <use href="./images/sprite.svg#icon-phone"></use>
             </svg>
@@ -604,7 +623,13 @@
 
           <div class="form__field">
             <label class="form__label" for="email">Почта</label>
-            <input class="form__input" type="email" name="email" id="email" />
+            <input
+              required
+              class="form__input"
+              type="email"
+              name="email"
+              id="email"
+            />
             <svg class="form__icon">
               <use href="./images/sprite.svg#icon-email"></use>
             </svg>
@@ -617,7 +642,6 @@
               placeholder="Введите текст"
               name="comment"
               id="comment"
-              rows="10"
             ></textarea>
           </div>
 

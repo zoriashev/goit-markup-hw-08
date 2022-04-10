@@ -1,18 +1,8 @@
-.button--menu .icon--close {
-  display: none;
-}
-.button--menu.is-open .icon--close {
-  display: block;
-}
-.button--menu.is-open .icon--menu {
-  display: none;
-}
 .button--menu {
   @media screen and (max-width: 767px) {
     fill: black;
     background-color: transparent;
     border: none;
-    z-index: 100;
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -20,4 +10,9 @@
 }
 .button--menu:active {
   fill: $accent-color;
+}
+.button--close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
